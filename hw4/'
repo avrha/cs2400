@@ -1,0 +1,144 @@
+#include <iostream>
+#include <cstdlib>
+#include <cmath>
+using namespace std;
+
+void menu()
+{
+  cout << "1. Find the number of digits in an integer." << endl;
+  cout << "2. Find the nth digit in an integer." << endl;
+  cout << "3. Find the sum of all digits of an integer." << endl;
+  cout << "4. Is the integer a palindrome?" << endl;
+  cout << "5. Quit" << endl;
+  cout << "Enter a choice: ";
+}
+
+int getInteger()
+{
+  int temp;
+  cout << "Enter in a positive integer: ";
+  
+  while(cin >> temp)
+  {
+    if(temp < 0)
+    {
+      cout << "Enter in a positive integer: ";
+    }
+
+    else if (temp >= 0)
+    {
+      break;
+    }
+  }
+  return temp;
+}
+
+int getSumDigits(int number)
+{
+  number = getInteger();
+  int sum = 0;
+
+  while(number != 0)
+  {
+    sum = sum + number % 10;
+    number /= 10;
+  }
+  return sum;
+} 
+
+int getNumDigits(int number)
+{
+  number = getInteger();
+  int count = 1;
+
+  while(number /= 10)
+  {
+    count++;
+  }
+  return count;
+}
+
+int getNthDigit(int number, int n)
+{
+  number = getInteger();
+  cout << "Enter a position: " << endl;
+  cin >> n;
+
+  int position, location;
+
+  position = (number/ pow(10, n-1));
+  location = position % 10;
+
+  return location;
+}
+
+bool isPalindrome(int getInteger())
+{
+  int mod = getInteger(), num = mod, rev = 0, digit;
+
+  while(mod != 0)
+  {
+    digit = mod % 10;
+    rev = (mod * 10) + digit;
+    mod = mod / 10;
+  }
+
+  if (mod == rev)
+  {
+    cout << "Number " << num << " is a palindrome" << endl;
+  }
+
+  else
+  {
+    cout << "Number " << num << " is not a palindrome" << endl;
+  }
+
+  return 0;
+}
+
+
+int main()
+{
+  int choice = 0;
+  menu();
+
+  while(cin >> choice)
+  {
+    if(choice == 1)
+    {
+      cout << getNumDigits(0) << endl;
+      menu();
+    }
+
+    else if(choice == 2)
+    {
+      cout << getNthDigit(0,0) << endl;
+      menu();
+    }
+
+    else if(choice == 3)
+    {
+      cout << getSumDigits(0) << endl;
+      menu();
+    }
+
+    else if(choice == 4)
+    {
+      isPalindrome(getInteger);
+      menu();
+    }
+
+    else if(choice == 5)
+    {
+      cout << "Exiting program..." << endl;
+      break;
+    }
+
+    else
+    {
+      cout << "Invalid input, try again" << endl;
+      menu();
+    }
+  }
+  return 0;
+}

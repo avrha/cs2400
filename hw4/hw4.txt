@@ -1,0 +1,177 @@
+CS2400
+
+HW4, Integers (40 Points)
+Due: Friday June 7, 2019
+
+Page 1 of 4
+
+Objectives: Integer arithmetic, Functions, menus.
+Write a C++ program that displays the following menu of choices.
+1. Find the number of digits in an integer.
+2. Find the nth digit in an integer.
+3. Find the sum of all digits of an integer.
+4. Is the integer a palindrome?
+5. Quit
+Enter a choice:
+For each of the choices (1, 3, 4), Read a positive integer number and call a function that
+processes the menu choice (descriptions below). For option 2 read two positive
+integers. If the n value is invalid, print an error message and display the menu again.
+Your program should continuously display the menu until the user enters 5 to quit. Any
+other choice should be ignored and display the menu again.
+Required Functions (use the provided prototype and function names):
+• Option 1, int getNumDigits(int number):
+Return the number of digits in number.
+•
+
+Option 2, int getNthDigit(int number, int n):
+Return the digit number specified by n. Right most digit is digit one.
+
+•
+
+Option 3, int getSumDigits(int number):
+Return the total value of all the digits.
+
+•
+
+Option 4, bool isPalindrome(int number):
+returns true if the number is a palindrome (1, 121, 1221, 134431, etc.). False
+otherwise.
+
+•
+
+A function (int getInteger()) that returns a positive integer. This function
+should loop until the user enters a positive integer.
+
+All of the above functions must only manipulate integers. Do not use string types
+
+or arrays in any part of this project.
+
+CS2400
+
+HW4, Integers (40 Points)
+Due: Friday June 7, 2019
+
+Sample Run (user input in red):
+1. Find the number of digits in an integer.
+2. Find the nth digit in an integer.
+3. Find the sum of all digits of an integer.
+4. Is the integer a palindrome?
+5. Quit
+Enter a choice: 0
+1. Find the number of digits in an integer.
+2. Find the nth digit in an integer.
+3. Find the sum of all digits of an integer.
+4. Is the integer a palindrome?
+5. Quit
+Enter a choice: 1
+Enter a positive integer: -9
+Enter a positive integer: -7
+Enter a positive integer: 123
+123 has 3 digits.
+1. Find the number of digits in an integer.
+2. Find the nth digit in an integer.
+3. Find the sum of all digits of an integer.
+4. Is the integer a palindrome?
+5. Quit
+Enter a choice: 2
+Enter an integer number: 23178149
+Enter a position: 4
+Digit number 4 is 8.
+1. Find the number of digits in an integer.
+2. Find the nth digit in an integer.
+3. Find the sum of all digits of an integer.
+4. Is the integer a palindrome?
+5. Quit
+Enter a choice: 2
+Enter an integer number: 23
+Enter a position: 4
+Invalid position.
+
+Page 2 of 4
+
+CS2400
+
+HW4, Integers (40 Points)
+Due: Friday June 7, 2019
+
+1. Find the number of digits in an integer.
+2. Find the nth digit in an integer.
+3. Find the sum of all digits of an integer.
+4. Is the integer a palindrome?
+5. Quit
+Enter a choice: 3
+Enter an integer number: 123456789
+The sum of all digits in 123456789 is 45.
+1. Find the number of digits in an integer.
+2. Find the nth digit in an integer.
+3. Find the sum of all digits of an integer.
+4. Is the integer a palindrome?
+5. Quit
+Enter a choice: 4
+Enter an integer number: 1
+The number 1 is a palindrome.
+1. Find the number of digits in an integer.
+2. Find the nth digit in an integer.
+3. Find the sum of all digits of an integer.
+4. Is the integer a palindrome?
+5. Quit
+Enter a choice: 4
+Enter an integer number: 12
+The number 12 is not a palindrome.
+1. Find the number of digits in an integer.
+2. Find the nth digit in an integer.
+3. Find the sum of all digits of an integer.
+4. Is the integer a palindrome?
+5. Quit
+Enter a choice: 4
+Enter an integer number: 1223221
+The number 1223221 is a palindrome.
+1. Find the number of digits in an integer.
+2. Find the nth digit in an integer.
+3. Find the sum of all digits of an integer.
+4. Is the integer a palindrome?
+5. Quit
+Enter a choice: 4
+Enter an integer number: 1221
+
+Page 3 of 4
+
+CS2400
+
+HW4, Integers (40 Points)
+Due: Friday June 7, 2019
+
+Page 4 of 4
+
+The number 1221 is a palindrome.
+1. Find the number of digits in an integer.
+2. Find the nth digit in an integer.
+3. Find the sum of all digits of an integer.
+4. Is the integer a palindrome?
+5. Quit
+Enter a choice: 5
+Done!
+Grading:
+Programs that contain syntax errors will earn zero points.
+Programs that do not include the above functions will also earn zero points.
+Programs that use arrays, strings, or any other library that was not discussed in class
+will earn zero points.
+Programs that use global variables other than constants will earn zero points.
+Your grade will be determine using the following criteria:
+•
+
+Correctness (25 points)
+o 5 points for each of the required functions listed above.
+
+•
+•
+•
+
+Runs continuously (4 points)
+Clarity and format of the output (5 points)
+Style & Documentation (6 points)
+
+Follow the coding style outline on GitHub:
+https://github.com/nasseef/cs2400/blob/master/docs/coding-style.md
+
+
