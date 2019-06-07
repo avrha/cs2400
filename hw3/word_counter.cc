@@ -14,6 +14,7 @@
 //*******************************************************************
 
 #include <iostream>
+#include <cstdlib>
 #include <iomanip>
 using namespace std;
 
@@ -91,6 +92,6 @@ int main( )
 
     //Prompts user the average words per sentence.
     cout << "Average words per sentence: " << average << endl;
-  }
+ }
   return 0;
 }

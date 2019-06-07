@@ -29,7 +29,7 @@ int main( )
 
   //File variables
   ifstream inStream;  
-  inStream.open("test.txt");
+  inStream.open("extraCredit.txt");
 
   //Tests if file does not open.
   if(inStream.fail())

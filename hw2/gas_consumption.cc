@@ -23,6 +23,7 @@ const double GAS_AVERAGE_HIGHWAY = 29.5;
   
 int main()
 {
+
   // Declaring all 7 variables as doubles 
   double town_mile, highway_mile, sum_mile, gas_town, gas_highway, gas_sum, total_mpg;
   
