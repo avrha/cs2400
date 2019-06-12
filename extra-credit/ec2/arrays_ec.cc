@@ -40,7 +40,6 @@ int main(int argc, char const *argv[]) {
 
     int count = 4;
     fillUP(scores, count);
-    cout << scores << endl;
 
     printArray(scores, count);
     int total = getTotal(scores, count);
