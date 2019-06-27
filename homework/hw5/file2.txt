@@ -1,0 +1,8 @@
+1. This is                 line 1
+2. This     is line 2
+3. Los  Angeles 
+4. happy    birthday ! Should be line 
+5. This is         line 3
+6. J R 7
+7. j
+
