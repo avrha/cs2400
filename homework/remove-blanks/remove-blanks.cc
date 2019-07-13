@@ -12,7 +12,9 @@
 *  Program cleanly formats the output file by and adding a single blank space before inserting text.
 *  Program also adds an extra blank line (unnumbered) at the end of the output file.
 *  
-*  Date: June 12, 2019       */ 
+*  Date: June 12, 2019       
+*/
+
 #include <iostream>
 #include <fstream>
 #include <cstdlib>
